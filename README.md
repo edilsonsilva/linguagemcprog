@@ -37,3 +37,53 @@ int main(){
     return 0;
 }
 ```
+
+#### Demonstração do desvio de fluxo
+``` c
+
+#include <stdio.h>
+
+int main(){
+    int ano;
+    printf("Digite um ano e tecle Enter\n");
+    scanf("%d",&ano);
+
+    if( ano % 4 == 0 ){
+        printf("O ano %d é bissexto\n",ano);
+    }
+    else{
+        printf("O ano %d NÃO é bissexto\n",ano);
+    }
+
+    return 0;
+
+}
+
+```
+
+
+#### Demonstração da estrutura de repetição
+
+```c
+
+#include <stdio.h>
+
+int main(){
+    int linha, coluna;
+    linha = 1;
+    coluna = 1;
+    while(linha <= 10){
+        while(coluna <= 30){
+            printf("#");
+            coluna++;
+        }
+        //Voltar a contagem da coluna ao valor
+        //inicial 1
+        coluna = 1;
+        printf("\n");
+        linha++;
+    }
+    return 0;
+}
+
+``` 
